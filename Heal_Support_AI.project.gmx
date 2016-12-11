@@ -7,7 +7,6 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Heroes">
-      <sprite>sprites\spr_Warrior</sprite>
       <sprite>sprites\sprBarbarian</sprite>
       <sprite>sprites\sprBard</sprite>
       <sprite>sprites\sprMageBlack</sprite>
@@ -15,6 +14,10 @@
       <sprite>sprites\sprMageTime</sprite>
       <sprite>sprites\sprPaladin</sprite>
       <sprite>sprites\sprWarlock</sprite>
+      <sprites name="Warrior">
+        <sprite>sprites\sprWarrior</sprite>
+        <sprite>sprites\sprWarrior_Attack</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\sprBaddy</sprite>
@@ -32,6 +35,9 @@
     <background>background\bkgTraining</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script_Test.gml</script>
+  </scripts>
   <objects name="objects">
     <objects name="Enemy">
       <object>objects\objEnemy</object>
@@ -62,6 +68,7 @@
       <object>objects\objSword</object>
       <object>objects\objStaff</object>
     </objects>
+    <object>objects\objUnit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\TrainingRoom</room>

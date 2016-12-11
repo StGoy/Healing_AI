@@ -58,7 +58,7 @@ ds_list_add(spawnTable, objBaddy, objMeanie);
         i = 0;
         while (i &lt; global.waveSize)
         {
-            var randObj = ds_list_find_value(spawnTable, irandom(ds_list_size(spawnTable)-1));
+            var randObj = ds_list_find_value(global.waveMobs, irandom(ds_list_size(global.waveMobs)-1));
             baddy = instance_create(1150, 96 + (irandom(2) * 288), randObj);
             var speedVar = baddy.spawn_speedMinVar + baddy.spawn_speedMaxVar;
             baddy.speed += random(1) * speedVar - baddy.spawn_speedMinVar;

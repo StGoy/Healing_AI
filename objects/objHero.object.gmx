@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>objDrawable</parentName>
+  <parentName>objUnit</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hp = 10;
+            <string>event_inherited();
+
+hp = 10;
 hp_Max = 10;
 
 //spawn weapon
@@ -54,7 +56,9 @@ weaponInstance = undefined;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!is_undefined(weaponInstance))
+            <string>event_inherited();
+
+if (!is_undefined(weaponInstance))
     with(weaponInstance)
         instance_destroy();
 
